@@ -23,7 +23,7 @@ class WithTeX(Slide):
     def construct(self):
         tex, text = VGroup(
             Tex(r"You can also use \TeX, e.g., $\cos\theta=1$"),
-            Text("which does not render like plain text"),
+            Text("which does not render like plain text."),
         ).arrange(DOWN)
 
         self.play(FadeIn(tex))
